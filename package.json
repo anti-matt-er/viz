@@ -1,0 +1,30 @@
+{
+  "name": "middleplate",
+  "version": "1.0.0",
+  "description": "An opinionated boilerplate for easy development of web applications utilising middleware",
+  "scripts": {},
+  "author": "anti-matt-er",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "cssnano": "^6.0.1",
+    "del": "^7.0.0",
+    "fancy-log": "^2.0.0",
+    "glob": "^10.3.0",
+    "gulp": "^4.0.2",
+    "gulp-ejs": "^5.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.24",
+    "sass": "^1.63.6",
+    "webpack-stream": "^7.0.0"
+  },
+  "overrides": {
+    "glob-parent": "6.0.2",
+    "semver": "7.5.3"
+  }
+}

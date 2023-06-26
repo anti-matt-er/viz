@@ -1,0 +1,22 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: $primary;
+}
+
+#hello-world {
+    display: block;
+    font-family: 'Comfortaa', cursive;
+    font-size: 96px;
+    color: $text;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-50%);
+}

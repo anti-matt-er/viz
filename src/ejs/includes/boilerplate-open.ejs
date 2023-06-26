@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="<%= data.site.language %>">
+
+<head>
+  <meta charset="utf-8">
+  <title><%= data.site.title %></title>
+  <meta name="description" content="<%= data.site.description %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="apple-mobile-web-app-title" content="<%= data.site.title %>">
+  <meta name="application-name" content="<%= data.site.title %>">
+  <meta name="msapplication-TileColor" content="<%= data.theme.colors.primary %>">
+  <meta name="theme-color" content="<%= data.theme.colors.primary %>">
+
+  <% for (const css of data.cdn.css) { %>
+  <%- include('link', {data: css}) %>
+  <% } %>
+  <% for (const css of data.dist.css) { %>
+  <%- include('link', {data: css}) %>
+  <% } %>
+
+  <% for (const js of data.cdn.js) { %>
+  <%- include('script', {data: js}) %>
+  <% } %>
+  <% for (const js of data.dist.js) { %>
+  <%- include('script', {data: js}) %>
+  <% } %>
+</head>
+
+<body>
